@@ -8,7 +8,7 @@ function App({ Component, pageProps, router }) {
   return (
     <>
       <Head>
-        <title key="title">Swiper - {meta.metaTitle || meta.title}</title>
+        <title key="title">{meta.metaTitle || meta.title}</title>
       </Head>
       {router.pathname !== "/" && <Header />}
       <Component {...pageProps} />
